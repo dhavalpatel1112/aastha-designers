@@ -10241,17 +10241,17 @@ textarea.form-control {
     transition: transform 0.5s ease-in-out;
 }
 
-/* Zoom and flip the background image on hover */
+ /* Zoom and flip the background image on hover */
 .item:hover .img {
-    transform: scale(1.1) rotateY(180deg);
+    transform: scale(1.0) rotateY(180deg);
 }
 
-/* Flip the paragraph with the class "price" */
+ /* Flip the paragraph with the class "price" */
 .item:hover .price {
     transform: rotateY(180deg);
 }
 
-/* Slide in animations for other elements */
+ /* Slide in animations for other elements */
 .item:hover .property-wrap {
     transform: translateX(0);
 }
