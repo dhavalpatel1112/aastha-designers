@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Text Effect</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Titillium Web", sans-serif;    
+        }
+
+        .bg-darken {
+            background: #0f101c; 
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('/images/bg_1.jpg') no-repeat center center/cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0f101c; /* Adjust opacity as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 15vw; /* Final size */
+            color: transparent;
+            -webkit-text-stroke: 1px #AA9663;
+            background: url('/images/bg_1.jpg') no-repeat center center/cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            margin: 0;
+            animation: textGrow 2s ease;
+        }
+
+        @keyframes textGrow {
+            0% {
+                font-size: 30vw; 
+            }
+            100% {
+                font-size: 15vw; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <h1>aastha</h1>
+        </div>
+    </div>
+    <script>
+        // Redirect to home.html after 2 seconds
+        setTimeout(function() {
+            window.location.href = "home.html";
+        }, 3000);
+    </script>
+</body>
+</html>
