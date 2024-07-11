@@ -10364,3 +10364,6 @@ button.btn:hover::before {
     display: block;
   }
 }
+#contactForm{
+  border-radius: 10%;
+}
