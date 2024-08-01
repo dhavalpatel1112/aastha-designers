@@ -58,7 +58,7 @@ body {
   color: #212529;
   text-align: left;
   /* background-color: #fff;  */
-  background-image: url(/images/main-bg.jpg);
+  background-image: url(/images/bg-aastha-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10366,4 +10366,47 @@ button.btn:hover::before {
 }
 #contactForm{
   border-radius: 10%;
+}
+
+/* Project section start */
+.section-projects .projects__image{
+  border: 1px solid black;
+  padding: 15px;
+}
+.projects__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.projects__button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.projects__image:hover .overlay {
+  opacity: 1;
+}
+.attachment-thumbnail{
+  transition: all ease-in-out 0.5s;
+}
+.projects__image:hover .attachment-thumbnail {
+  transform: scale(1.1);
 }
