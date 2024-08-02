@@ -3467,7 +3467,8 @@ input[type="button"].btn-block {
     justify-content: space-between; 
   }
   .logo{
-    font-size: 45px;
+    width: 150px;
+    height: auto;
   }
 
 .navbar-brand {
