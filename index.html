@@ -39,23 +39,17 @@
             align-items: center;
         }
 
-        h1 {
-            font-size: 15vw; /* Final size */
-            color: transparent;
-            -webkit-text-stroke: 0px #AA9663;
-            background: url('/images/bg_1.jpg') no-repeat center center/cover;
-            background-clip: text;
-            -webkit-background-clip: text;
-            margin: 0;
-            animation: textGrow 2s ease;
+        .logo {
+            width: 15vw; /* Final size */
+            animation: logoZoom 2s ease;
         }
 
-        @keyframes textGrow {
+        @keyframes logoZoom {
             0% {
-                font-size: 30vw; 
+                transform: scale(2.5);
             }
             100% {
-                font-size: 15vw; 
+                transform: scale(1);
             }
         }
     </style>
@@ -63,11 +57,11 @@
 <body>
     <div class="container">
         <div class="overlay">
-            <h1>aastha</h1>
+            <img src="images/logo-gold.png" alt="" class="logo">
         </div>
     </div>
     <script>
-        // Redirect to home.html after 2 seconds
+        // Redirect to home.html after 3 seconds
         setTimeout(function() {
             window.location.href = "home.html";
         }, 3000);
