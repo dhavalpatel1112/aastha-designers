@@ -10558,10 +10558,12 @@ button.btn:hover::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  width: 50%;
-  height: 80%;
+  max-width: 40%;
+  width: 40%;
+  height: auto;
+  max-height: 70%;
 }
+
 
 .close-btn {
   position: absolute;
