@@ -10469,7 +10469,7 @@ button.btn:hover::before {
   }
 }
 #contactForm{
-  border-radius: 10%;
+  border-radius: 8px;
 }
 
 /* Project section start */
@@ -10646,3 +10646,89 @@ button.btn:hover::before {
 .pr-gallery img.active {
   display: block;
 }
+/* 
+=====================================
+=       projects page css           =
+=====================================
+*/
+.menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.menu-item {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #AA9663;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+    .menu-item:hover, .menu-item.active {
+        background-color: #0f101c;
+    }
+
+    .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  min-height: 350px;
+}
+
+.image-gallery img {
+  width: 100%; /* Adjust based on your design */
+  max-width: 100%; /* Ensure images scale properly */
+  margin-bottom: 20px;
+  /* border-radius: 15%; */
+}
+
+    .image-gallery img.show {
+        opacity: 1;
+        transform: scale(1);
+        position: static;
+    }
+
+    .image-gallery img.hide {
+        opacity: 0;
+        transform: scale(0.8);
+        position: absolute;
+    }
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .menu-item {
+    margin: 5px 5px;
+  }
+
+  .image-gallery img {
+    width: 30%; /* Adjust columns for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .image-gallery img {
+    width: 30%; /* Adjust columns for large screens */
+  }
+}
+.container {
+        perspective: 1000px;
+    }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+    }
+
+    .image-gallery img:hover {
+        transform: scale(1.1);
+  z-index: 999;
+    }
