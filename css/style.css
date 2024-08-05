@@ -10616,3 +10616,33 @@ button.btn:hover::before {
   text-decoration: none;
   cursor: pointer;
 }
+.pr-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+.pr-menu-item {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.pr-menu-item:hover {
+  background-color: #575757;
+}
+.pr-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pr-gallery img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  display: none;
+}
+.pr-gallery img.active {
+  display: block;
+}
