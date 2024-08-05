@@ -8479,6 +8479,27 @@ h1, h2, h3, h4, h5,
     color: #fff;
     line-height: 1.1;
     font-weight: 400; }
+    @media (max-width:992px) {
+      .slider-text h1 {
+        font-size: 50px;
+        color: #fff;
+        line-height: 1.1;
+        font-weight: 400; }
+    }
+    @media (max-width:768px) {
+      .slider-text h1 {
+        font-size: 40px;
+        color: #fff;
+        line-height: 1.1;
+        font-weight: 400; }
+    }
+    @media (max-width:500px) {
+      .slider-text h1 {
+        font-size: 40px;
+        color: #fff;
+        line-height: 1.1;
+        font-weight: 400; }
+    }
     .slider-text h1 span {
       display: block; }
   .slider-text .icon-wrap .icon {
@@ -8530,6 +8551,7 @@ h1, h2, h3, h4, h5,
   .slider-text .bread {
     font-weight: 400 !important;
     position: relative; }
+    
 
 @media (min-width: 992px) {
   .search-bg {
