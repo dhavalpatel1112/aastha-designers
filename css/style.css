@@ -10662,6 +10662,7 @@ button.btn:hover::before {
   padding: 10px 20px;
   margin: 5px;
   background-color: #AA9663;
+  border: 1px solid black;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
