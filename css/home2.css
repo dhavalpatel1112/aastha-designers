@@ -26260,7 +26260,6 @@ aside.tip .pointer {
 }
 
 .wht-btn__gry-brder:hover,.active {
-    background-color: #f7f7f7;
     border-radius: 2px;
     color: #000;
 }
