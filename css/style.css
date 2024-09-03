@@ -9378,7 +9378,9 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 6em 0;
+  background-color: white;
+  width: 100%;
+  padding: 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -10659,17 +10661,22 @@ button.btn:hover::before {
 }
 
 .menu-item {
-  padding: 10px 20px;
+  padding: 10px 6px;
+  font-size: 24px;
   margin: 5px;
-  background-color: #AA9663;
-  border: 1px solid black;
-  color: white;
+  /* background-color: #AA9663;
+  border: 1px solid black; */
+  color: black;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-    .menu-item:hover, .menu-item.active {
-        background-color: #0f101c;
+
+    
+    .menu-item.active {
+        /* background-color: #0f101c; */
+        color: #AA9663;
+        font-weight: 700;
     }
 
     .image-gallery {
@@ -10731,5 +10738,15 @@ button.btn:hover::before {
 
     .image-gallery img:hover {
         transform: scale(1.1);
-  z-index: 999;
+        z-index: 999;
     }
+
+    i.fa-solid.fa-circle{
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+  }
+
+

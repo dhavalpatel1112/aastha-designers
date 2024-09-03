@@ -24,32 +24,21 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home2.css">
 	<style>
-		* {
-			font-family: "Titillium Web", sans-serif;
-		}
-
-		.search-place {
-			position: relative;
-			display: block;
-		}
-
-		.search-place img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-
-		.search-place .desc {
+		.ftco-navbar-light {
+			background: black !important;
 			position: absolute;
-			bottom: 0;
+			top: 0px;
 			left: 0;
-			width: 100%;
-			background: rgba(0, 0, 0, 0.5);
-			color: #fff;
-			padding: 10px;
-			text-align: center;
+			right: 0;
+			z-index: 3;
+		}
+		.wht-btn__gry-brder:hover, .active {
+			background-color: black !important;
+			border-radius: 2px;
+			color: #000;
 		}
 	</style>
+	
 </head>
 
 <body>
@@ -75,7 +64,7 @@
 		</div>
 	</nav>
 
-    <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -106,14 +95,13 @@
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
-	</section>
+	</section> -->
 
-    <section class="popular-tours-slider slide-up-x3 play" id="popular-tours-section">
+    <!-- <section class="popular-tours-slider slide-up-x3 play" id="popular-tours-section">
         <div class="grid-container">
             <div class="grid-x">
                 <div class="row items-align-center d-flex justify-content-center">
                     <div class="col-md-12 heading-section text-center ftco-animate">
-                        <h2 class="mb-2">Our Projects</h2>
                     </div>
                 </div>
                 <div class="menu-bar">
@@ -133,7 +121,6 @@
                             <a href="residential.html" class="cell-container cell small-3 relative slick-slide slick-current slick-active" style="width: 396px;" data-slick-index="0" aria-hidden="false" tabindex="0">
                                     <img src="/images/residencial/res1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£880</span></p></div>  -->
                                         <div class="cell__bottom absolute">
                                             <h5>Residential</h5>
                                             <div class="wht-btn__white-brder item">View Peojects </div>
@@ -143,7 +130,6 @@
                                 <a href="retail.html" class="cell-container cell small-3 relative slick-slide slick-active" style="width: 396px;" data-slick-index="1" aria-hidden="false" tabindex="0">
                                     <img src="/images/retail/ret1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£630</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Retail</h5>
                                             <div class="wht-btn__white-brder item">View Peojects </div>
@@ -152,7 +138,6 @@
                                 </a><a href="office.html" class="cell-container cell small-3 relative slick-slide slick-active" style="width: 396px;" data-slick-index="2" aria-hidden="false" tabindex="0">
                                     <img src="/images/offices/off1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£628</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Office</h5>
                                             <div class="wht-btn__white-brder item">View Peojects  </div>
@@ -161,7 +146,6 @@
                                 </a><a href="co-office.html" class="cell-container cell small-3 relative slick-slide" style="width: 396px;" data-slick-index="3" aria-hidden="true" tabindex="-1">
                                     <img src="/images/corporate offices/coff1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£1455</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Corporate Office</h5>
                                             <div class="wht-btn__white-brder item">View Peojects </div>
@@ -170,7 +154,6 @@
                                 </a><a href="restaurent.html" class="cell-container cell small-3 relative slick-slide" style="width: 396px;" data-slick-index="5" aria-hidden="true" tabindex="-1">
                                     <img src="/images/restaurents/res1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£570</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Restaurant</h5>
                                             <div class="wht-btn__white-brder item">View Peojects  </div>
@@ -179,7 +162,6 @@
                                 </a><a href="weekend.html" class="cell-container cell small-3 relative slick-slide" style="width: 396px;" data-slick-index="6" aria-hidden="true" tabindex="-1">
                                     <img src="/images/weekend/weeknd1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£138</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Weekend Home</h5>
                                             <div class="wht-btn__white-brder item">View Peojects </div>
@@ -188,7 +170,6 @@
                                 </a><a href="exhibition.html" class="cell-container cell small-3 relative slick-slide" style="width: 396px;" data-slick-index="7" aria-hidden="true" tabindex="-1">
                                     <img src="/images/exhibition/exh1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£255</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Exhibition</h5>
                                             <div class="wht-btn__white-brder item">View Peojects </div>
@@ -197,51 +178,109 @@
                                 </a><a href="c&h.html" class="cell-container cell small-3 relative slick-slide" style="width: 396px;" data-slick-index="8" aria-hidden="true" tabindex="-1">
                                     <img src="/images/hospital/hos1.jpg" class="absolute">
                                     <div class="overlay-container absolute max-width max-height">
-                                        <!-- <div class="cell__top absolute"><p>From<br><span>£360</span></p></div> -->
                                         <div class="cell__bottom absolute">
                                             <h5>Clinics/Hospitals</h5>
                                             <div class="wht-btn__white-brder item">View Peojects </div>
                                         </div>
                                     </div>
                                 </a></div></div></div>
-                        <!-- <div class="slider__counter">1-24</div> -->
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt pt-5 pb-5" style="background-image: url(); background-repeat: no-repeat; background-position: center; background-size: cover; background-attachment: fixed;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 order-md-last d-flex align-items-stretch">
-					<div class="img w-100 img-2 mr-md-2 ftco-animate shadow-lg d-item"
-						style="background-image: url(images/about-us.jpg); border-radius: 10%;"></div>
-					<!-- <div class="img w-100 img-2 ml-md-2 ftco-animate" style="background-image: url(images/about-2.jpg);"></div> -->
-				</div>
-				<div class="col-md-8 wrap-about py-md-5 ftco-animate">
-					<div class="heading-section pr-md-5">
-						<h2 class="mb-4">About us</h2>
-						<div class="img w-100 img-2 mr-md-2 ftco-animate shadow-lg m-item"
-							style="background-image: url(images/about-us.jpg); border-radius: 10%;"></div>
-						<h3>aastha</h3>
-						<p>In the year 2003, aastha was coined when two visionary and wholehearted enthusiasts shared a
-							dream vision of creating better functional and more comfortable surroundings making this
-							world a better place by creating eccentric objects which are “finest” before being sublime.
-							<br>
-							Our small size makes us approachable to every possible need of the client. From design
-							conceptualization to space planning to interior construction to budgetary concern, we pay
-							attention to each and every microscopic necessity of the client. <br>
-							Our constant effort lies in making optimum use of resources gathered from man and nature and
-							achieve growth towards excellence and perfection, while contributing to the society and
-							conserving nature with due respect to tradition. <br>
-							We are providing services in designing interiors as well as architecture compiling
-							residential, retail designs along with exhibition/ small design, adaptive reuse/conversion
-							and refurbishment/restoration.</p>
 
-						<a href="about.html"><button class="btn btn-primary">View more</button></a>
+	<!-- three projects per row -->
+    <section class="faraway-tours-block slide-up-x3 play pb-0" style="margin-top: 150px;">
+		<div class="grid-container__small">
+			<div class="grid-x grid-margin-x">
+	
+					<div class="cell small-7 medium-6 large-6">
+						<h2>Our Projects</h2>
 					</div>
-				</div>
+					<div class="cell small-5 medium-6 large-6 flex-container align-right">
+						<a href="holidays/Worldwide-Group-Holidays" class="wht-btn__blk-brder"></a>
+					</div>
+	
+			</div>
+			<div class="grid-x grid-margin-x">
+	
+					<a href="tour/Australia-New-Zealand" class="cell-container cell small-12 medium-6 large-4 relative">
+						<img src="https://stapati.com/assets/media/designs/uploads/projects/project/829x591/xtn-199-334171.jpg.pagespeed.ic.2RDxkxqn4-.jpg" class="absolute">
+						<div class="overlay-container absolute max-width max-height">
+							<!-- <div class="cell__top absolute"><p>From<br><span>£4195</span></p></div> -->
+							<div class="cell__bottom absolute">
+								<h5>Australia &amp; New Zealand<br><span>16 Days</span></h5>
+	
+								<!-- <div class="wht-btn__white-brder">Book Now</div> -->
+							</div>
+						</div>
+					</a>
+					<a href="tour/USA-East-Coast" class="cell-container cell small-12 medium-6 large-4 relative">
+						<img src="https://stapati.com/assets/media/designs/uploads/projects/project/829x591/xenchanted-island-056-243369.jpg.pagespeed.ic.eRSQt8JVX0.jpg" class="absolute">
+						<div class="overlay-container absolute max-width max-height">
+							<!-- <div class="cell__top absolute"><p>From<br><span>£1590</span></p></div> -->
+							<div class="cell__bottom absolute">
+								<h5>USA East Coast<br><span>7 Days</span></h5>
+	
+								<!-- <div class="wht-btn__white-brder">Book Now</div> -->
+							</div>
+						</div>
+					</a>
+					<a href="tour/08-Days-Scenic-Japan" class="cell-container cell small-12 medium-6 large-4 relative">
+						<img src="https://stapati.com/assets/media/designs/uploads/projects/project/829x591/7-5-thumbnail-83999.jpg" class="absolute">
+						<div class="overlay-container absolute max-width max-height">
+							<!-- <div class="cell__top absolute"><p>From<br><span>£2055</span></p></div> -->
+							<div class="cell__bottom absolute">
+								<h5>Japan<br><span>8 Days</span></h5>
+	
+								<!-- <div class="wht-btn__white-brder">Book Now</div> -->
+							</div>
+						</div>
+					</a>
+	
+			</div>
+		</div>
+	</section>
+
+	<!-- two projects per row -->
+	<section class="romantic-tours-block slide-up-x3 play pt-0 pb-5">
+		<div class="grid-container__small">
+			<div class="grid-x grid-margin-x">
+	
+					<div class="cell small-7 medium-6 large-6">
+						<h2>Our Works</h2>
+					</div>
+					<div class="cell small-5 medium-6 large-6 flex-container align-right">
+						<a href="holidays/Eurostar" class="wht-btn__blk-brder"></a>
+					</div>
+	
+					<a href="tour/03-Days-Paris-via-Eurostar" class="cell-container cell small-12 large-6 relative">
+	
+						<img src="https://stapati.com/assets/media/designs/uploads/projects/project/829x591/x-1dsc2990-7-5-928314.jpg.pagespeed.ic.wDHIXpDeXA.jpg" class="absolute">
+						<div class="overlay-container absolute max-width max-height">
+							
+							<div class="cell__bottom absolute">
+								<h5>Paris and Disneyland by Eurostar<br><span>3 Days</span></h5>
+	
+								<!-- <div class="wht-btn__white-brder">Book Now</div> -->
+							</div>
+						</div>
+					</a>
+					<a href="tour/05-Days-Panoramic-Europe-by-Eurostar" class="cell-container cell small-12 large-6 relative">
+	
+						<img src="https://stapati.com/assets/media/designs/uploads/projects/project/829x591/x08-7-5-007242.jpg.pagespeed.ic.6tu9qsN_xQ.jpg" class="absolute">
+						<div class="overlay-container absolute max-width max-height">
+							
+							<div class="cell__bottom absolute">
+								<h5>Panoramic Europe by Eurostar<br><span>5 Days</span></h5>
+	
+								<!-- <div class="wht-btn__white-brder">Book Now</div> -->
+							</div>
+						</div>
+					</a>
+	
 			</div>
 		</div>
 	</section>
@@ -289,7 +328,7 @@
 						Gujarat, India.</span></li>
 	                <li class="pb-0"><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91-98257 24073</span></a></li>
 	                <li class="pt-0"><a href="#"><span class="icon fa fa-phone"></span><span class="text">+91-98255 88712</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-envelope pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-envelope pr-4"></span><span class="text">aasthadesigners@yahoo.co.in</span></a></li>
 	              </ul>
 	            </div>
             </div>
