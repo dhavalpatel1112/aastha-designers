@@ -2094,12 +2094,13 @@ select:focus {
 .about-interrio-area {
   padding-bottom: 81px;
   padding-top: 100px;
+  background-color: #282828;
 }
 .about-interrio-area .text-holder {
   
 }
 .about-interrio-area .text-holder h3 {
-  color: #252525;
+  color: #fff;
   font-size: 20px;
   font-weight: 500;
   margin: -5px 0 24px;
@@ -2176,7 +2177,7 @@ select:focus {
   margin: 28px 0 0;
 }
 .about-interrio-area .single-item .text-box h3 {
-  color: #252525;
+  color: #fff;
   font-size: 20px;
   font-weight: 500;
   margin: 0 0 14px;
@@ -3870,6 +3871,7 @@ padding-left: 20px;
 #project-area {
   padding-bottom: 100px;
   padding-top: 80px;
+  background-color: #282828;
 }
 #project-area .project-filter {
   margin-bottom: 60px
@@ -3879,7 +3881,7 @@ padding-left: 20px;
   margin: 0 3px;
 }
 #project-area .project-filter li span {
-  background: #fff;
+  background: #282828;
   border: 1px solid #ebebeb;
   color: #9a9a9a;
   display: block;
@@ -3899,7 +3901,7 @@ padding-left: 20px;
 #project-area .project-filter li:hover span {
   background: #252525;
   color: #c4ac6e;
-  border: 1px solid #252525;
+  border: 1px solid #c4ac6e;
 }
 #project-area .single-project-item .img-holder .overlay .box .content .icon-holder {
   position: absolute;
