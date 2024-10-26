@@ -6557,3 +6557,24 @@ section.welcome-area h2 span {
       padding: 10px 0 10px !important;
   }
 }
+.proj-card{
+  position: relative;
+}
+.project-title{
+  position: absolute;
+  background-color: white;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition:all .5s ease-in-out;
+}
+.project-title p{
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.single-project-item.proj-card:hover .project-title {
+  opacity: 0;
+}
